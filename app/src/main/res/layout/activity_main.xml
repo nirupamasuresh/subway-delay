@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:textSize="32sp"
+        android:text="Subway Delay Predictor"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:background="#66000000">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerTrains"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="64dp"
+            android:gravity="center">
+
+        </Spinner>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinnerTrains"
+            android:layout_margin="64dp"
+            android:background="@drawable/button_shape"
+            android:text="Predict"
+            android:id="@+id/predict_button"
+            android:textColor="@android:color/white"
+            android:textSize="21sp"
+            />
+    </RelativeLayout>
+
+
+</FrameLayout>
